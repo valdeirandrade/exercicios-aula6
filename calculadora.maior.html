@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function calc(){
+        
+    var n1 = parseFloat(campo_1.value)
+    var n2 = parseFloat(campo_2.value)
+    var text1 = "O maior valor é o "
+
+    if  (n1 > n2) {   
+    var text2 = text1.concat(n1)   
+     }            else {  if (n1==n2){
+        var text2 = "Os números são iguais"}
+            else {
+                var text2 = text1.concat(n2)
+            }
+}
+window.alert(text2)
+    }
+      
+</script>
+
+    <div><h1>Calculadora Maior Número</h1></div>
+
+<div> <input id = "campo_1" placeholder="Primeiro Número" type="number"></div>
+
+<div> <input id = "campo_2" placeholder="Segundo Número" type="number"></div>
+
+<button onclick = calc()> Maior </button>
+
+</body>
+</html>
