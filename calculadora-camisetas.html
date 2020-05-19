@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Camisetas</title>
+</head>
+<body>
+    
+<h1>Pedido de Camisetas</h1>
+
+<script>
+function soma() {   
+
+let n1 = parseFloat(pequena.value)
+let n2 = parseFloat(media.value)
+let n3 = parseFloat(grande.value)
+
+let total = n1 + n2 + n3
+
+totalp.innerText = total
+
+</script>
+
+<div><label>Pequena R$ 10,00</label></div>
+
+<div>
+<Input tipe = "number" id = "pequena" placeholder ="Camisetas P" ></Input>
+</div>
+<div><label>Media R$ 12,00</label></div>
+
+<div><Input tipe = "number" id = "media" placeholder ="Camisetas M"></Input>
+</div>
+
+<div><label>Grande R$ 15,00</label></div>
+
+<div><Input tipe = "number" id = "grande" placeholder ="Camisetas G"></Input>
+</div>
+<div> <button onclick="soma()">Calcular</button></div>
+
+<div><Input id = "totalp" placeholder="Total do Pedido"></Input>
+
+
+
+</body>
+</html>
