@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function imc() {
+
+
+let p = parseFloat(peso.value)
+let a = parseFloat(altura.value)
+
+let indice = p / (a * a)
+
+resultado.value = indice
+}
+    </script>    
+    <div>Calculadora IMC</div>
+
+
+    <div> Digite seu peso: <input type="number" id="peso"></div>
+
+    <div> Digite sua altura: <input type="number" id="altura"></div>
+
+   <div><button onclick="imc()">Calcular</button></div>
+
+Resultado:<input type="number" id="resultado">
+<div>
+    <table border="1">
+        <tr>
+            <td>IMC	CLASSIFICAÇÃO "border"</td>
+            <td>OBESIDADE</td>
+            <td>(GRAU)</td>
+        </tr>
+
+        <tr>
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+        </tr>
+
+        <tr>
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+        </tr>
+
+   </table>
+</div>
+</body>
+</html>

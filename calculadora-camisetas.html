@@ -10,37 +10,40 @@
 <h1>Pedido de Camisetas</h1>
 
 <script>
-function soma() {   
+
+function soma() 
+ {   
 
 let n1 = parseFloat(pequena.value)
 let n2 = parseFloat(media.value)
 let n3 = parseFloat(grande.value)
 
-let total = n1 + n2 + n3
+let valorp = 10.00
+let valorm = 12.00
+let valorg = 15.00
 
-totalp.innerText = total
+let total = (n1 * valorp) + (n2 * valorm) + (n3 * valorg)
+
+resultado.value = total
+}
 
 </script>
 
 <div><label>Pequena R$ 10,00</label></div>
 
-<div>
-<Input tipe = "number" id = "pequena" placeholder ="Camisetas P" ></Input>
-</div>
+<div><input type="number" id="pequena" placeholder="Camisetas P" ></input></div>
+
 <div><label>Media R$ 12,00</label></div>
 
-<div><Input tipe = "number" id = "media" placeholder ="Camisetas M"></Input>
-</div>
+<div><input type="number" id="media" placeholder="Camisetas M"></input></div>
 
 <div><label>Grande R$ 15,00</label></div>
 
-<div><Input tipe = "number" id = "grande" placeholder ="Camisetas G"></Input>
-</div>
+<div><input type="number" id="grande" placeholder="Camisetas G"></input></div>
+
 <div> <button onclick="soma()">Calcular</button></div>
 
-<div><Input id = "totalp" placeholder="Total do Pedido"></Input>
-
-
+<input type="number" id="resultado" placeholder="Total">
 
 </body>
 </html>
